@@ -103,12 +103,13 @@ const Contact = () => {
                 <Left>
                     <Form ref={ref} onSubmit={handleSubmit}>
                         <Title>Contact Me</Title>
-                        <Input placeholder="Name" name="from_name" rows={1} />
-                        <Input placeholder="Email" name="email_id" rows={1} />
+                        <Input placeholder="Name" name="from_name" rows={1} required />
+                        <Input placeholder="Email" name="email_id" rows={1} required />
                         <TextArea
                             placeholder="Write your message"
                             name="message"
                             rows={10}
+                            required
                         />
                         <Button type="submit">Send</Button>
                         {success &&
